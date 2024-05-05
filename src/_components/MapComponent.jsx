@@ -41,11 +41,12 @@ export default function MapComponent() {
   return (
     <div>
       {userLocation ? (
-        <MapContainer center={userLocation} zoom={18} scrollWheelZoom={false}>
+        <MapContainer center={userLocation} zoom={16} scrollWheelZoom={false}>
           <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
+
           <Marker position={userLocation} icon={Icon}>
             <Tooltip
               direction="bottom"
@@ -54,7 +55,7 @@ export default function MapComponent() {
               permanent
               interactive
             >
-              Your current location. <br /> Easily customizable.
+              Your current location.
             </Tooltip>
           </Marker>
         </MapContainer>
