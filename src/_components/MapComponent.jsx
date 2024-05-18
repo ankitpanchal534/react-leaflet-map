@@ -1,8 +1,8 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { MapContainer, Marker, Popup, TileLayer, Tooltip } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import { useEffect, useState } from "react";
+import { MapContainer, Marker, TileLayer, Tooltip } from "react-leaflet";
 import "react-leaflet-markercluster/dist/styles.min.css";
 
 const Icon = new L.Icon({
